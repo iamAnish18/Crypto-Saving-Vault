@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Savings Vault - Login</title>
+    <link rel="stylesheet" href="utlity.css">
+    <link rel="shortcut icon" href="IMG/hack2..jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <h2>Welcome to Crypto Savings Vault</h2>
+            <form id="loginform">
+                <div class="input-container">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="IMG/crypto.hackbuilt.jpg" alt="Crypto Savings Vault Image">
+        </div>
+    </div>
+    <script>
+        // JavaScript code for validation and redirection
+        document.getElementById('loginform').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+          
+          // Define valid credentials
+          const validUsername = "iamanish";
+          const validPassword = "anish";
+          
+          // Get user inputs
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+    
+          // Check credentials
+          if (username === validUsername && password === validPassword) {
+            // alert("Login successful!");
+            window.location.href = "index.html"; // Redirect to home page
+          } else {
+            alert("Invalid username or password. Please try again.");
+          }
+        });
+      </script>
+</body>
+</html>
