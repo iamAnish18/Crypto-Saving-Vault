@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Anish;
+    src: url(SuisseIntl-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anish', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.video-container {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    /* background-color: gray; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* position: relative; */
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+h1 {
+    font-weight: bolder;
+    margin: 1.5vw;
+    color: #3674B5;
+}
+
+#user-balance1{
+    font-size: 1.5vw;
+}
+
+#Balance{
+    font-size: 1.5vw;
+}
+
+#user-address{
+    max-width: 20%;
+}
+
+button {
+    background-color: #3674B5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #A1E3F9;
+    color: black;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#user-info {
+    margin-bottom: 20px;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+@media(max-width :900px){
+    .container{
+        width: 47%;
+    }
+}
+
+@media(max-width :600px){
+    .container{
+        width: 90%;
+    }
+
+    #Balance{
+        font-size: 5.5vw;
+    }
+
+    #user-balance1{
+        font-size: 5.5vw;
+    }
+}
