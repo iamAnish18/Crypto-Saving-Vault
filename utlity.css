@@ -1,0 +1,119 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container holding both form and image */
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 900px;
+    background-color: #1c1c2e;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+/* Login form */
+.login-form {
+    padding: 20px;
+    width: 50%;
+    color: white;
+}
+
+/* Heading for the login form */
+.login-form h2 {
+    text-align: center;
+    color: #00bcd4;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Input fields styling */
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #aaa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #00bcd4;
+    background-color: #444;
+}
+
+/* Login button styling */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #008c99;
+}
+
+/* Image container */
+.image-container {
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width :650px) {
+    .login-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container img {
+        display: none;
+    }
+    .login-form {
+        width: 100%;
+    }
+}
